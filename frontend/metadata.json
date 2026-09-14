@@ -1,0 +1,6 @@
+{
+  "name": "SukshmaDrishti",
+  "description": "SukshmaDrishti: Hybrid Quantum-Classical Machine Learning research platform for early disease risk prediction, parameterized quantum circuit simulation, model-agnostic feature explainability, and reproducible benchmarking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

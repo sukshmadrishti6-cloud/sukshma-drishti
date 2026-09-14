@@ -1,0 +1,25 @@
+# Quantum Machine Learning Configuration (Qiskit Aer)
+
+backend:
+  name: "aer_simulator"
+  shots: 1024
+  use_gpu: false
+
+qubits: 4
+
+feature_map:
+  name: "ZZFeatureMap"  # Options: AngleEncoding, ZZFeatureMap, PauliFeatureMap
+  reps: 2
+  entanglement: "linear"
+
+ansatz:
+  name: "RealAmplitudes"  # Options: RealAmplitudes, EfficientSU2
+  reps: 2
+  entanglement: "full"
+
+optimizer:
+  name: "COBYLA"  # Options: COBYLA, SPSA, Adam
+  maxiter: 60
+
+qsvc:
+  C: 1.0

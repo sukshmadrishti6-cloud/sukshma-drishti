@@ -1,0 +1,63 @@
+# Version Control & Local Environments
+.git
+.gitignore
+.venv
+venv
+ENV
+env
+
+# Python Cache & Bytecode
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Coverage
+.pytest_cache
+.coverage
+htmlcov/
+.mypy_cache
+.ruff_cache
+
+# Environment Secrets
+.env
+.env.*
+!.env.example
+
+# Frontend Caches & Dependencies
+frontend/node_modules
+node_modules
+frontend/dist
+frontend/.vite
+
+# Local Experiments & Raw Data
+data/raw/*
+!data/raw/pima_diabetes.csv
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/benchmark_results.json
+!data/processed/.gitkeep
+experiments/runs/*
+!experiments/runs/.gitkeep
+
+# IDEs & System Artifacts
+.vscode
+.idea
+.DS_Store
+Thumbs.db

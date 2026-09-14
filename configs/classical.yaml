@@ -1,0 +1,27 @@
+# Classical ML Model Hyperparameters
+
+logistic_regression:
+  C: 1.0
+  penalty: "l2"
+  solver: "lbfgs"
+  max_iter: 500
+
+svm:
+  C: 1.0
+  kernel: "rbf"
+  gamma: "scale"
+  probability: true
+
+random_forest:
+  n_estimators: 100
+  max_depth: 6
+  min_samples_split: 4
+  criterion: "gini"
+  random_state: 42
+
+xgboost:
+  n_estimators: 85
+  learning_rate: 0.08
+  max_depth: 4
+  subsample: 0.8
+  eval_metric: "logloss"

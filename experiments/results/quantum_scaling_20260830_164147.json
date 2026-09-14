@@ -1,0 +1,279 @@
+{
+  "experiment_type": "quantum_scaling_4_6_8_qubits",
+  "timestamp": "2026-08-30T16:41:47.342751",
+  "dataset": "Synthetic Test Fixture (100 samples)",
+  "dataset_hash": "synthetic_fixture_seed42",
+  "random_seed": 42,
+  "experiments": [
+    {
+      "configuration": "QML-4Q",
+      "num_features": 4,
+      "num_qubits": 4,
+      "status": "COMPLETED",
+      "circuit_metadata": {
+        "model_name": "Quantum Support Vector Classifier (QSVC-4Q)",
+        "model_type": "qsvc",
+        "num_qubits": 4,
+        "feature_map_name": "ZZFeatureMap",
+        "reps": 2,
+        "entanglement": "linear",
+        "circuit_depth": 1,
+        "circuit_gate_count": 1,
+        "backend": "aer_simulator (local)",
+        "shots": 1024,
+        "random_seed": 42,
+        "qiskit_version": "2.5.2",
+        "qiskit_aer_version": "0.17.2",
+        "qiskit_machine_learning_version": "0.9.1"
+      },
+      "variance_stats": {
+        "n_components": 4,
+        "explained_variance_ratio": [
+          0.1843806702297185,
+          0.16478713034844553,
+          0.1429590250107156,
+          0.1334990312517565
+        ],
+        "cumulative_explained_variance": 0.6256258568406361
+      },
+      "samples": {
+        "train_samples": 80,
+        "test_samples": 20
+      },
+      "timings": {
+        "preprocessing_time_ms": 6.738399970345199,
+        "feature_reduction_time_ms": 0.9929999941959977,
+        "kernel_init_time_ms": 1.8195000011473894,
+        "train_time_ms": 6734.553400077857,
+        "inference_time_ms": 3500.598100014031,
+        "total_experiment_time_ms": 13744.991799932905
+      },
+      "metrics": {
+        "accuracy": 0.55,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "sensitivity": 0.0,
+        "specificity": 0.8461538461538461,
+        "confusion_matrix": {
+          "tn": 11,
+          "fp": 2,
+          "fn": 7,
+          "tp": 0,
+          "matrix": [
+            [
+              11,
+              2
+            ],
+            [
+              7,
+              0
+            ]
+          ]
+        },
+        "roc_auc": 0.41758241758241754,
+        "pr_auc": 0.3445796267224839,
+        "brier_score": 0.2986280990684243,
+        "log_loss": 0.8301686609185266
+      },
+      "confusion_matrix": {
+        "tn": 11,
+        "fp": 2,
+        "fn": 7,
+        "tp": 0,
+        "matrix": [
+          [
+            11,
+            2
+          ],
+          [
+            7,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "configuration": "QML-6Q",
+      "num_features": 6,
+      "num_qubits": 6,
+      "status": "COMPLETED",
+      "circuit_metadata": {
+        "model_name": "Quantum Support Vector Classifier (QSVC-6Q)",
+        "model_type": "qsvc",
+        "num_qubits": 6,
+        "feature_map_name": "ZZFeatureMap",
+        "reps": 2,
+        "entanglement": "linear",
+        "circuit_depth": 1,
+        "circuit_gate_count": 1,
+        "backend": "aer_simulator (local)",
+        "shots": 1024,
+        "random_seed": 42,
+        "qiskit_version": "2.5.2",
+        "qiskit_aer_version": "0.17.2",
+        "qiskit_machine_learning_version": "0.9.1"
+      },
+      "variance_stats": {
+        "n_components": 6,
+        "explained_variance_ratio": [
+          0.1843806702297185,
+          0.16478713034844553,
+          0.1429590250107156,
+          0.1334990312517565,
+          0.11189332108391448,
+          0.09847755517053104
+        ],
+        "cumulative_explained_variance": 0.8359967330950816
+      },
+      "samples": {
+        "train_samples": 80,
+        "test_samples": 20
+      },
+      "timings": {
+        "preprocessing_time_ms": 4.97380003798753,
+        "feature_reduction_time_ms": 0.838099978864193,
+        "kernel_init_time_ms": 1.6964999958872795,
+        "train_time_ms": 13138.171799946576,
+        "inference_time_ms": 6601.764200022444,
+        "total_experiment_time_ms": 26499.00680000428
+      },
+      "metrics": {
+        "accuracy": 0.65,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "sensitivity": 0.0,
+        "specificity": 1.0,
+        "confusion_matrix": {
+          "tn": 13,
+          "fp": 0,
+          "fn": 7,
+          "tp": 0,
+          "matrix": [
+            [
+              13,
+              0
+            ],
+            [
+              7,
+              0
+            ]
+          ]
+        },
+        "roc_auc": 0.5274725274725274,
+        "pr_auc": 0.3828153988868275,
+        "brier_score": 0.262743829920025,
+        "log_loss": 0.7153277530736623
+      },
+      "confusion_matrix": {
+        "tn": 13,
+        "fp": 0,
+        "fn": 7,
+        "tp": 0,
+        "matrix": [
+          [
+            13,
+            0
+          ],
+          [
+            7,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "configuration": "QML-8Q",
+      "num_features": 8,
+      "num_qubits": 8,
+      "status": "COMPLETED",
+      "circuit_metadata": {
+        "model_name": "Quantum Support Vector Classifier (QSVC-8Q)",
+        "model_type": "qsvc",
+        "num_qubits": 8,
+        "feature_map_name": "ZZFeatureMap",
+        "reps": 2,
+        "entanglement": "linear",
+        "circuit_depth": 1,
+        "circuit_gate_count": 1,
+        "backend": "aer_simulator (local)",
+        "shots": 1024,
+        "random_seed": 42,
+        "qiskit_version": "2.5.2",
+        "qiskit_aer_version": "0.17.2",
+        "qiskit_machine_learning_version": "0.9.1"
+      },
+      "variance_stats": {
+        "n_components": 8,
+        "explained_variance_ratio": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        "cumulative_explained_variance": 1.0
+      },
+      "samples": {
+        "train_samples": 80,
+        "test_samples": 20
+      },
+      "timings": {
+        "preprocessing_time_ms": 4.5674999710172415,
+        "feature_reduction_time_ms": 0.3646999830380082,
+        "kernel_init_time_ms": 2.0794000010937452,
+        "train_time_ms": 31812.034100061283,
+        "inference_time_ms": 16207.6694999123,
+        "total_experiment_time_ms": 63983.817799948156
+      },
+      "metrics": {
+        "accuracy": 0.65,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "sensitivity": 0.0,
+        "specificity": 1.0,
+        "confusion_matrix": {
+          "tn": 13,
+          "fp": 0,
+          "fn": 7,
+          "tp": 0,
+          "matrix": [
+            [
+              13,
+              0
+            ],
+            [
+              7,
+              0
+            ]
+          ]
+        },
+        "roc_auc": 0.6263736263736264,
+        "pr_auc": 0.5383529169243455,
+        "brier_score": 0.21990225802088553,
+        "log_loss": 0.6313770467165183
+      },
+      "confusion_matrix": {
+        "tn": 13,
+        "fp": 0,
+        "fn": 7,
+        "tp": 0,
+        "matrix": [
+          [
+            13,
+            0
+          ],
+          [
+            7,
+            0
+          ]
+        ]
+      }
+    }
+  ]
+}

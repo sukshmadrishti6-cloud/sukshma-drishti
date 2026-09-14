@@ -1,0 +1,17 @@
+# SukshmaDrishti Base Platform Configuration
+project_name: "sukshmadrishti-quantum-health"
+environment: "development"
+random_seed: 42
+logging:
+  level: "INFO"
+  format: "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
+
+data:
+  raw_path: "data/raw/pima_diabetes.csv"
+  processed_path: "data/processed/pima_diabetes_processed.csv"
+  target_column: "Outcome"
+  test_size: 0.2
+  stratify: true
+
+model_dir: "models/"
+experiment_dir: "experiments/"

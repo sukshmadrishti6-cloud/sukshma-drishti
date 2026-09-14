@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sih26139-quantum-health"
+version = "0.1.0"
+description = "Hybrid Quantum Machine Learning Platform for Early Disease Detection"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "SIH26139 Team"}
+]
+dependencies = [
+    "fastapi==0.110.0",
+    "uvicorn[standard]==0.28.0",
+    "pydantic==2.6.0",
+    "PyJWT==2.8.0",
+    "numpy==1.26.4",
+    "pandas==2.2.0",
+    "scipy==1.12.0",
+    "scikit-learn==1.4.0",
+    "xgboost==2.0.0",
+    "qiskit==0.46.0",
+    "qiskit-machine-learning==0.7.2",
+    "qiskit-aer==0.13.3",
+    "pyyaml==6.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.0.0",
+    "httpx==0.27.0",
+    "ruff==0.3.0",
+    "black==24.2.0",
+    "mypy==1.8.0",
+]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+pythonpath = ["backend", "."]
+addopts = "-ra -q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+exclude = [
+    ".git",
+    ".venv",
+    "frontend",
+    "node_modules",
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
