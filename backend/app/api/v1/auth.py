@@ -1,4 +1,3 @@
-"""Authentication API Router for user registration, login, and profile management."""
 from fastapi import APIRouter, Depends, status
 from sqlalchemy.orm import Session
 
